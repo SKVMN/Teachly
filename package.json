@@ -1,0 +1,26 @@
+{
+  "name": "teachly",
+  "private": true,
+  "version": "1.0.0",
+  "description": "online language teaching platform",
+  "homepage": "https://github.com/SKVMN/Teachly#readme",
+  "bugs": {
+    "url": "https://github.com/SKVMN/Teachly/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKVMN/Teachly.git"
+  },
+  "license": "ISC",
+  "author": "Maksim Skvortsov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages/shared"
+  ]
+}
