@@ -1,1 +1,14 @@
 node_modules/
+packages/shared/build/
+apps/backend/build/
+.cache/
+
+# Frontend (SvelteKit/Vite)
+apps/frontend/.svelte-kit/
+apps/frontend/build/
+apps/frontend/package/
+apps/frontend/.env
+apps/frontend/.env.*
+!apps/frontend/.env.example
+apps/frontend/vite.config.js.timestamp-*
+apps/frontend/vite.config.ts.timestamp-*
