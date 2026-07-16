@@ -1,0 +1,26 @@
+{
+  "name": "@teachly/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc -p tsconfig.json --watch",
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier --check src package.json tsconfig.json",
+    "lint:fix": "eslint . --fix && prettier --write src package.json tsconfig.json",
+    "format": "prettier --write src package.json tsconfig.json",
+    "format:check": "prettier --check src package.json tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}

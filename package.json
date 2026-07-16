@@ -1,0 +1,46 @@
+{
+  "name": "teachly",
+  "private": true,
+  "version": "1.0.0",
+  "description": "online language teaching platform",
+  "homepage": "https://github.com/SKVMN/Teachly#readme",
+  "bugs": {
+    "url": "https://github.com/SKVMN/Teachly/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKVMN/Teachly.git"
+  },
+  "license": "ISC",
+  "author": "Maksim Skvortsov",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "bun run --filter @teachly/shared build && bun run --filter @teachly/backend build && bun run --filter @teachly/frontend build",
+    "build:shared": "bun run --filter @teachly/shared build",
+    "build:backend": "bun run --filter @teachly/backend build",
+    "dev": "bun run --parallel --filter '*' dev",
+    "dev:frontend": "bun run --filter @teachly/frontend dev",
+    "dev:backend": "bun run --filter @teachly/backend dev",
+    "dev:shared": "bun run --filter @teachly/shared dev",
+    "lint": "bun run --filter '*' lint",
+    "lint:fix": "bun run --filter '*' lint:fix",
+    "format": "bun run --filter '*' format",
+    "format:check": "bun run --filter '*' format:check"
+  },
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages/shared"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
+  }
+}
